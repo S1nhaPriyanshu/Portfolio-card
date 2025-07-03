@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  background: url(7658393.png) no-repeat center center fixed;
+  color: #fdf5e6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  background: linear-gradient(rgba(30, 27, 24, 0.85), rgba(30, 27, 24, 0.85)),
+              url('4715582.png') no-repeat center center fixed;
+  background-size: cover;
+  max-width: 800px;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  flex: 1;
+  padding: 2rem;
+  color: #fdf5e6;
+}
+
+.profile {
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid #544b45;
+}
+
+#image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fdf5e6;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.bio {
+  max-width: 250px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #fdf5e6;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1;
+  padding: 2rem;
+  color: #fdf5e6;
+}
+
+.link {
+  text-decoration: none;
+  color: #fdf5e6;
+  font-size: 1rem;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.link:hover {
+  border-bottom: 1px solid #f5e9d4;
+  color: #fff7e6;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+.social-heading {
+  font-size: 0.85rem;
+  color: #fdf5e6;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .right-section {
+    align-items: center;
+    text-align: center;
+  }
+}
